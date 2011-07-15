@@ -47,6 +47,11 @@ namespace Pilgrim
             get { return _migrationLoader.MigrationsTypes; }
         }
 
+        public void MigrateToLast()
+        {
+            Migrate(null);
+        }
+
         public void Migrate(long? version)
         {
             if (version.HasValue)
@@ -59,7 +64,7 @@ namespace Pilgrim
         /// Run all migrations up to the latest.  Make no changes to database if
         /// dryrun is true.
         /// </summary>
-        public void MigrateToLastVersion(string schemainfoname)
+        private void MigrateToLastVersion(string schemainfoname)
         {
             MigrateTo(_migrationLoader.LastVersion, schemainfoname);
         }
@@ -102,7 +107,7 @@ namespace Pilgrim
         /// If <c>dryrun</c> is set, don't write any changes to the database.
         /// </summary>
         /// <param name="version">The version that must became the current one</param>
-        public void MigrateTo(long version, string schemainfoname)
+        private void MigrateTo(long version, string schemainfoname)
         {
 
             if (_migrationLoader.MigrationsTypes.Count == 0)

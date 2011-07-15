@@ -34,7 +34,7 @@
     <SignAssembly>true</SignAssembly>
   </PropertyGroup>
   <PropertyGroup>
-    <AssemblyOriginatorKeyFile>Pilgrim.snk</AssemblyOriginatorKeyFile>
+    <AssemblyOriginatorKeyFile>../Pilgrim.snk</AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -133,6 +133,9 @@
     <Compile Include="Providers\TypeNames.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\Pilgrim.snk">
+      <Link>Pilgrim.snk</Link>
+    </None>
     <None Include="Fluent\Tables\TableAction.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>TableAction1.cs</LastGenOutput>
@@ -141,7 +144,6 @@
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>TableChangeAction1.cs</LastGenOutput>
     </None>
-    <None Include="Pilgrim.snk" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

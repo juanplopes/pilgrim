@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using Microsoft.VisualStudio.TemplateWizard;
 
@@ -26,7 +25,7 @@ namespace Pilgrim.Template
 
         public void RunStarted(object automationObject, Dictionary<string, string> replacementsDictionary, WizardRunKind runKind, object[] customParams)
         {
-            replacementsDictionary["$timestamp$"] = string.Format("{0:yyyyMMddHHmmss}", DateTime.Now);
+            replacementsDictionary["$timestamp$"] = string.Format("{0:yyyyMMddHHmmss}", DateTime.Now)+"abc";
         }
 
         public bool ShouldAddProjectItem(string filePath)
