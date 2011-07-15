@@ -9,12 +9,12 @@ namespace $rootnamespace$
     [Migration($timestamp$)]
     public class M$timestamp$ : FluentMigration
     {
-        public override void Down(SchemaAction schema)
+        public override void Up(SchemaAction schema)
         {
             throw new NotImplementedException();
         }
 
-        public override void Up(SchemaAction schema)
+        public override void Down(SchemaAction schema)
         {
             throw new NotImplementedException();
         }

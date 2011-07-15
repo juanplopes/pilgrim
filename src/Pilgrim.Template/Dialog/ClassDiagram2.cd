@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pilgrim.Template.Dialog.DataConnectionDialog" Collapsed="true">
+    <Position X="3.25" Y="3.25" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Pilgrim.Template.Dialog.DataConnectionDialog.DataSourceCollection" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DataConnectionDialog.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="Pilgrim.Template.Dialog.DataConnectionDialog.PropertyGridUIControl" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DataConnectionDialog.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Class Name="Pilgrim.Template.Dialog.DataConnectionDialog.BasicConnectionProperties" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>DataConnectionDialog.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>BBjHqEiQQDRFgMQABlyjwYgSAEHEAAIFUKIlRhAgEDQ=</HashCode>
+      <FileName>DataConnectionDialog.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ConnectionUIControl" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.OleDBConnectionUIControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>jAAABAIAAOAIJQYgAGLioQoCABAAgwAlEpAIqAADqAg=</HashCode>
+      <FileName>OleDBConnectionUIControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.OracleConnectionUIControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="11" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAAABAAAECAABQIAACKAhAgCCBAAiRAAAJAAgAQCgAA=</HashCode>
+      <FileName>OracleConnectionUIControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.SqlConnectionUIControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="6" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Pilgrim.Template.Dialog.SqlConnectionUIControl.ControlProperties" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>SqlConnectionUIControl.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>vAEChgAQsSAIrQIAMCaABAgCCBAQgQAAgJgCgDETgDA=</HashCode>
+      <FileName>SqlConnectionUIControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.SqlFileConnectionUIControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAEABAAA0CAABQIAACaABAgCABgAgQAAABAAiBgCgBA=</HashCode>
+      <FileName>SqlExpressConnectionUIControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="System.Windows.Forms.UserControl" Collapsed="true">
+    <Position X="7.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.AccessConnectionUIControl" Collapsed="true">
+    <Position X="13.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAAABAAAUCAABQIAACKAhAgCABAAgRAAABAAiBgCgBA=</HashCode>
+      <FileName>AccessConnectionUIControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.OdbcConnectionUIControl" Collapsed="true">
+    <Position X="4.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hALQBBAIALAgpQYBMKagAAgCgBCAgQAEABAAgAADgAA=</HashCode>
+      <FileName>OdbcConnectionUIControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -12,7 +12,7 @@ namespace $safeprojectname$
         static void Main(string[] args)
         {
             var migrator = new DbMigrator(
-                new MigratorOptions("ConnectionStringName").FromAssembly(Assembly.GetExecutingAssembly()));
+                new MigratorOptions("Pilgrim").FromAssembly(Assembly.GetExecutingAssembly()));
             migrator.MigrateToLast();
         }
     }

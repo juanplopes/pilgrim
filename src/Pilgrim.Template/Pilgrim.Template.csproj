@@ -47,11 +47,97 @@
     </Reference>
     <Reference Include="Microsoft.VisualStudio.TemplateWizardInterface, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="System" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dialog\AccessConnectionUIControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\AccessConnectionUIControl.designer.cs">
+      <DependentUpon>AccessConnectionUIControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\AddPropertyDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\AddPropertyDialog.designer.cs">
+      <DependentUpon>AddPropertyDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\AdoDotNetConnectionProperties.cs" />
+    <Compile Include="Dialog\ContextHelpEventArgs.cs" />
+    <Compile Include="Dialog\DataConnectionAdvancedDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\DataConnectionAdvancedDialog.designer.cs">
+      <DependentUpon>DataConnectionAdvancedDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\DataConnectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\DataConnectionDialog.designer.cs">
+      <DependentUpon>DataConnectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\DataConnectionDialogContext.cs" />
+    <Compile Include="Dialog\DataConnectionSourceDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog\DataConnectionSourceDialog.designer.cs">
+      <DependentUpon>DataConnectionSourceDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\DataProvider.cs" />
+    <Compile Include="Dialog\DataSource.cs" />
+    <Compile Include="Dialog\DynamicPropertyDescriptor.cs" />
+    <Compile Include="Dialog\HelpUtils.cs" />
+    <Compile Include="Dialog\IDataConnectionProperties.cs" />
+    <Compile Include="Dialog\IDataConnectionUIControl.cs" />
+    <Compile Include="Dialog\LayoutUtils.cs" />
+    <Compile Include="Dialog\NativeMethods.cs" />
+    <Compile Include="Dialog\OdbcConnectionProperties.cs" />
+    <Compile Include="Dialog\OdbcConnectionUIControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\OdbcConnectionUIControl.designer.cs">
+      <DependentUpon>OdbcConnectionUIControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\OleDBConnectionProperties.cs" />
+    <Compile Include="Dialog\OleDBConnectionUIControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\OleDBConnectionUIControl.designer.cs">
+      <DependentUpon>OleDBConnectionUIControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\OracleConnectionProperties.cs" />
+    <Compile Include="Dialog\OracleConnectionUIControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\OracleConnectionUIControl.designer.cs">
+      <DependentUpon>OracleConnectionUIControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\RTLAwareMessageBox.cs" />
+    <Compile Include="Dialog\SqlConnectionProperties.cs" />
+    <Compile Include="Dialog\SqlConnectionUIControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\SqlConnectionUIControl.designer.cs">
+      <DependentUpon>SqlConnectionUIControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\SqlExpressConnectionUIControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Dialog\SqlExpressConnectionUIControl.designer.cs">
+      <DependentUpon>SqlExpressConnectionUIControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\Strings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Strings.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog\UserPreferencedChangedHandler.cs" />
+    <Compile Include="ProjectWizard.cs" />
     <Compile Include="Wizard.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -60,6 +146,47 @@
       <Link>Pilgrim.snk</Link>
     </None>
     <None Include="app.config" />
+    <None Include="Dialog\ClassDiagram1.cd" />
+    <None Include="Dialog\ClassDiagram2.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Dialog\AccessConnectionUIControl.resx">
+      <DependentUpon>AccessConnectionUIControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\AddPropertyDialog.resx">
+      <DependentUpon>AddPropertyDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\DataConnectionAdvancedDialog.resx">
+      <DependentUpon>DataConnectionAdvancedDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\DataConnectionDialog.resx">
+      <DependentUpon>DataConnectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\DataConnectionSourceDialog.resx">
+      <DependentUpon>DataConnectionSourceDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\OdbcConnectionUIControl.resx">
+      <DependentUpon>OdbcConnectionUIControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\OleDBConnectionUIControl.resx">
+      <DependentUpon>OleDBConnectionUIControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\OracleConnectionUIControl.resx">
+      <DependentUpon>OracleConnectionUIControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\SqlConnectionUIControl.resx">
+      <DependentUpon>SqlConnectionUIControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\SqlExpressConnectionUIControl.resx">
+      <DependentUpon>SqlExpressConnectionUIControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog\Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Dialog\Microsoft.Data.ConnectionUI.Dialog.csproj" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

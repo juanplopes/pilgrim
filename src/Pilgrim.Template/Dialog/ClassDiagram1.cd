@@ -1,0 +1,270 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Pilgrim.Template.Dialog.AccessConnectionUIControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAAABAAAUCAABQIAACKAhAgCABAAgRAAABAAiBgCgBA=</HashCode>
+      <FileName>AccessConnectionUIControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.AddPropertyDialog" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAQCQAAIAAAACAAACCAEAAEABAAAAAQABAAAQ=</HashCode>
+      <FileName>AddPropertyDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.AdoDotNetConnectionProperties" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EQIgCAAQgAAAhAAEKQAEBQgIwiAAQAAAAAACKAAUAQg=</HashCode>
+      <FileName>AdoDotNetConnectionProperties.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.ContextHelpEventArgs" Collapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ContextHelpEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.DataConnectionAdvancedDialog" Collapsed="true">
+    <Position X="19.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQgAAAAAQCQBAAACAACAAAACCEAAEAAAAIAAQCAAAAQ=</HashCode>
+      <FileName>DataConnectionAdvancedDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.DataConnectionDialog" Collapsed="true">
+    <Position X="21.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBjHqEiQQDRFgMQABlyjwYgSAEHEAAIFUKIlRhAgEDQ=</HashCode>
+      <FileName>DataConnectionDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.DataConnectionSourceDialog" Collapsed="true">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAgQGgGAQCQAQEUAAAiAAgCCJEFAkBAAACAAQAUAAAQ=</HashCode>
+      <FileName>DataConnectionSourceDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.DataProvider" Collapsed="true">
+    <Position X="16" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgNJAAgAAgIAAEMAABBBQAACAAAAAABCAAAAICAIA=</HashCode>
+      <FileName>DataProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.DataSource" Collapsed="true">
+    <Position X="17.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAMAEgACisAEAAAAAAAARIAAIAAAAAAAAoAAAAEAA=</HashCode>
+      <FileName>DataSource.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.DynamicPropertyDescriptor" Collapsed="true">
+    <Position X="19.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAMAIABAZCC4BgAWSgECAAQQEEAIwpWAIAACQQBACDE=</HashCode>
+      <FileName>DynamicPropertyDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.HelpUtils" Collapsed="true">
+    <Position X="21.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAEAAAAAACEAAAAAAAAAgAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>HelpUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.LayoutUtils" Collapsed="true">
+    <Position X="14.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQABACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAA=</HashCode>
+      <FileName>LayoutUtils.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.NativeMethods" Collapsed="true">
+    <Position X="16" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCEAEUoBQAAABAIDAyAwABAICjAABCACJkADRAABAA=</HashCode>
+      <FileName>NativeMethods.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.OdbcConnectionProperties" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAEAAAAAAAA=</HashCode>
+      <FileName>OdbcConnectionProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.OdbcConnectionUIControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hALQBBAIALAgpQYBMKagAAgCgBCAgQAEABAAgAADgAA=</HashCode>
+      <FileName>OdbcConnectionUIControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.OleDBConnectionProperties" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAACAAABAAAAAIIAAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OleDBConnectionProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.OleDBSpecializedConnectionProperties" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACCAAAAAAABAAABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OleDBConnectionProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.OleDBSqlConnectionProperties" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAACAAAAAAABAAABAAABAAAABAAAAAAACAABAAAAAA=</HashCode>
+      <FileName>OleDBConnectionProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.OleDBOracleConnectionProperties" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OleDBConnectionProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.OleDBAccessConnectionProperties" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAACAIAAGAABAAACIAABQABAAAAAAAAAAAACAAAEAA=</HashCode>
+      <FileName>OleDBConnectionProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.OleDBConnectionUIControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="19.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>jAAABAIAAOAIJQYgAGLioQoCABAAgwAlEpAIqAADqAg=</HashCode>
+      <FileName>OleDBConnectionUIControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.OracleConnectionProperties" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAABAAABAAAAAgAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>OracleConnectionProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.OracleConnectionUIControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAAABAAAECAABQIAACKAhAgCCBAAiRAAAJAAgAQCgAA=</HashCode>
+      <FileName>OracleConnectionUIControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.RTLAwareMessageBox" Collapsed="true">
+    <Position X="14.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RTLAwareMessageBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.SqlConnectionProperties" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAABAAABAAEAAgAAAAAwAAAAAAACAAAAAA=</HashCode>
+      <FileName>SqlConnectionProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.SqlFileConnectionProperties" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAQCAAABAAABAAABAAAAAAABAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>SqlConnectionProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.SqlConnectionUIControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="16" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>vAEChgAQsSAIrQIAMCaABAgCCBAQgQAAgJgCgDETgDA=</HashCode>
+      <FileName>SqlConnectionUIControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.SqlFileConnectionUIControl" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="17.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hAEABAAA0CAABQIAACaABAgCABgAgQAAABAAiBgCgBA=</HashCode>
+      <FileName>SqlExpressConnectionUIControl.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.Strings" Collapsed="true">
+    <Position X="19.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>iSAbAhYAgEgAAQEIAUBRUIAIBRjVJIBIAEDQSlrSRIw=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Pilgrim.Template.Dialog.UserPreferenceChangedHandler" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="21.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAEgAAAAAAAAAAAAAAAAAAAAAAAAAACBAA=</HashCode>
+      <FileName>UserPreferencedChangedHandler.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Enum Name="Pilgrim.Template.Dialog.DataConnectionDialogContext" Collapsed="true">
+    <Position X="14.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAoICwBEgKIAEAQABCAAAAABIAAAABIAIABBAUDgAI=</HashCode>
+      <FileName>DataConnectionDialogContext.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Pilgrim.Template.Dialog.GetValueHandler" Collapsed="true">
+    <Position X="17.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicPropertyDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Pilgrim.Template.Dialog.SetValueHandler" Collapsed="true">
+    <Position X="21.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>DynamicPropertyDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Pilgrim.Template.Dialog.CanResetValueHandler" Collapsed="true">
+    <Position X="14.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicPropertyDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Pilgrim.Template.Dialog.ResetValueHandler" Collapsed="true">
+    <Position X="19.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicPropertyDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Pilgrim.Template.Dialog.ShouldSerializeValueHandler" Collapsed="true">
+    <Position X="14.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicPropertyDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Pilgrim.Template.Dialog.GetChildPropertiesHandler" Collapsed="true">
+    <Position X="16" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>DynamicPropertyDescriptor.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

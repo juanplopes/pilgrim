@@ -5,15 +5,15 @@
     <Description>Pilgrim Migration Template</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
-    <Icon>__TemplateIcon.png</Icon>
-    <PreviewImage>__PreviewImage.png</PreviewImage>
+    <Icon>__PreviewImage.ico</Icon>
+    <PreviewImage>__PreviewImage.ico</PreviewImage>
   </TemplateData>
   <TemplateContent>
     <References />
     <ProjectItem SubType="Code" TargetFileName="M$timestamp$ - $fileinputname$.cs" ReplaceParameters="true">Migration.cs</ProjectItem>
   </TemplateContent>
   <WizardExtension>
-	<Assembly>Pilgrim.Template, Version=1.0.0.0, Culture=neutral, PublicKeyToken=205aed16ca3fe93d</Assembly>
-	<FullClassName>Pilgrim.Template.Wizard</FullClassName>
+    <Assembly>Pilgrim.Template, Version=1.0.0.0, Culture=neutral, PublicKeyToken=205aed16ca3fe93d</Assembly>
+    <FullClassName>Pilgrim.Template.Wizard</FullClassName>
   </WizardExtension>
 </VSTemplate>

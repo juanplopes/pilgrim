@@ -11,16 +11,21 @@
     <LocationField>Enabled</LocationField>
     <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
     <SortOrder>10</SortOrder>
-    <Icon>__TemplateIcon.png</Icon>
-    <PreviewImage>__PreviewImage.png</PreviewImage>
+    <Icon>__PreviewImage.ico</Icon>
+    <PreviewImage>__PreviewImage.ico</PreviewImage>
   </TemplateData>
   <TemplateContent>
     <Project TargetFileName="Migrations.csproj" File="Migrations.csproj" ReplaceParameters="true">
       <ProjectItem ReplaceParameters="false" TargetFileName="Pilgrim.dll">Pilgrim.dll</ProjectItem>
       <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
       <Folder Name="Properties" TargetFolderName="Properties">
         <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
       </Folder>
     </Project>
   </TemplateContent>
+  <WizardExtension>
+    <Assembly>Pilgrim.Template, Version=1.0.0.0, Culture=neutral, PublicKeyToken=205aed16ca3fe93d</Assembly>
+    <FullClassName>Pilgrim.Template.ProjectWizard</FullClassName>
+  </WizardExtension>
 </VSTemplate>

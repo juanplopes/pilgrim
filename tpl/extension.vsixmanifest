@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Vsix xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Version="1.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2010">
-  <Identifier Id="VSIXProject1.Microsoft.628946f7-03cf-4eda-9428-39c669360a45">
+  <Identifier Id="Pilgrim.JuanLopes.628946f7-03cf-4eda-9428-39c669360a45">
     <Name>Pilgrim VS Templates</Name>
     <Author>Juan Lopes</Author>
     <Version>1.0</Version>
     <Description xml:space="preserve">Pilgrim VS Templates</Description>
     <Locale>1033</Locale>
+    <Icon>Icon.ico</Icon>
     <SupportedProducts>
       <VisualStudio Version="10.0">
         <Edition>Ultimate</Edition>
