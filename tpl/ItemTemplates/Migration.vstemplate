@@ -1,8 +1,8 @@
 <VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Item">
   <TemplateData>
     <DefaultName>Describe the migration here</DefaultName>
-    <Name>Pilgrim Migration Template</Name>
-    <Description>Pilgrim Migration Template</Description>
+    <Name>Pilgrim Migration</Name>
+    <Description>Adds an empty Pilgrim Migration.</Description>
     <ProjectType>CSharp</ProjectType>
     <SortOrder>10</SortOrder>
     <Icon>__PreviewImage.ico</Icon>

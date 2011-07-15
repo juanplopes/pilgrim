@@ -10,7 +10,6 @@ namespace Pilgrim.Template
 {
     public class ProjectWizard : IWizard
     {
-        bool ok = true;
         public void BeforeOpeningFile(EnvDTE.ProjectItem projectItem)
         {
         }
@@ -31,16 +30,22 @@ namespace Pilgrim.Template
         {
             var dialog = new DataConnectionDialog();
             DataSource.AddStandardDataSources(dialog);
-            if (ok = DataConnectionDialog.Show(dialog) == DialogResult.OK)
+            if (DataConnectionDialog.Show(dialog) == DialogResult.OK)
             {
                 replacementsDictionary["$connectionString$"] = dialog.ConnectionString;
                 replacementsDictionary["$connectionProvider$"] = dialog.SelectedDataProvider.Name;
             }
+            else
+            {
+                replacementsDictionary["$connectionString$"] = "";
+                replacementsDictionary["$connectionProvider$"] = "";
+            }
         }
+
 
         public bool ShouldAddProjectItem(string filePath)
         {
-            return ok;
+            return true;
         }
     }
 }

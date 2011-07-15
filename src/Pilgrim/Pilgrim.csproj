@@ -47,6 +47,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\GlobalInfo.cs">
+      <Link>Properties\GlobalInfo.cs</Link>
+    </Compile>
+    <Compile Include="CommandLineRunner.cs" />
     <Compile Include="Migrator\BaseMigrate.cs" />
     <Compile Include="DbMigrator.cs" />
     <Compile Include="Migrator\DuplicatedVersionException.cs" />

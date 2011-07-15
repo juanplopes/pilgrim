@@ -11,7 +11,7 @@
     <Configuration>Release</Configuration>
     <Platform>Any CPU</Platform>
 
-    <ProductVersionBase>1.0</ProductVersionBase>
+    <ProductVersionBase>0.1</ProductVersionBase>
     <ProductVersionBuild>0.0</ProductVersionBuild>
    
     <MainLibraryName>pilgrim-$(ProductVersionBase)</MainLibraryName>
@@ -38,7 +38,7 @@
     <AssemblyInfo CodeLanguage="CS"
                OutputFile="$(SourceDir)\GlobalInfo.cs"
                AssemblyCompany="Juan Lopes"
-               AssemblyProduct="Pilgrim Migrations ($(ProductBuildName))"
+               AssemblyProduct="Pilgrim Migrations"
                AssemblyCopyright="Copyright (c) Juan Lopes 2011"
                AssemblyTrademark=""
                ComVisible="false"
@@ -71,6 +71,9 @@
     <Zip Files="@(ProjectTemplates)" ZipFileName="$(BuildDir)\templates\ProjectTemplates\Migrations.zip" WorkingDirectory="$(TemplatesDir)\ProjectTemplates"/>
     <Zip Files="@(ItemTemplates)" ZipFileName="$(BuildDir)\templates\ItemTemplates\Migration.zip" WorkingDirectory="$(TemplatesDir)\ItemTemplates"/>
     <Copy SourceFiles="@(TemplateMetadata)" DestinationFolder="$(BuildDir)\templates" />
+      <FileUpdate Files="$(BuildDir)\templates\extension.vsixmanifest"
+                Regex="#version#"
+                ReplacementText="$(ProductVersionBase)" />
   </Target>
   
   <Target Name="Package" DependsOnTargets="Rebuild;Extension">
