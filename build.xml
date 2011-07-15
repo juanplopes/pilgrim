@@ -1,12 +1,11 @@
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Test" ToolsVersion="4.0">
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Integrate" ToolsVersion="4.0">
   <PropertyGroup>
-    <LibDir>lib\</LibDir>
-
     <RootDir>$(MSBuildProjectDirectory)\</RootDir>
     <BuildDir>$(RootDir)build\</BuildDir>
     <PackageDir>$(RootDir)\pkg\</PackageDir>
    
     <SourceDir>$(RootDir)\src\</SourceDir>
+    <TemplatesDir>$(RootDir)\tpl\</TemplatesDir>
     <KeyFilePath>$(SourceDir)\Pilgrim.snk</KeyFilePath>
 
     <Configuration>Release</Configuration>
@@ -61,16 +60,30 @@
     <Nunit Assemblies="$(TestAssembly)" ToolPath="util\nunit"/>
   </Target>
 
-  <Target Name="Integrate">
-	<CallTarget Targets="Rebuild;Test;Package"></CallTarget>
-  </Target>
-
-  <Target Name="Package" DependsOnTargets="Build">
+  <Target Name="Extension" DependsOnTargets="Build">
+    <Copy SourceFiles="$(BuildDir)\Pilgrim.dll" DestinationFolder="$(TemplatesDir)\ProjectTemplates\" />
+    <Copy SourceFiles="$(BuildDir)\Pilgrim.Template.dll" DestinationFolder="$(BuildDir)\templates\" />
     <ItemGroup>
-      <ZipFiles Include="$(BuildDir)\Pilgrim.dll"/>
+      <ProjectTemplates Include="$(TemplatesDir)\ProjectTemplates\**\*.*"/>
+      <ItemTemplates Include="$(TemplatesDir)\ItemTemplates\**\*.*"/>
+      <TemplateMetadata Include="$(TemplatesDir)\*.*" />
+    </ItemGroup>
+    <Zip Files="@(ProjectTemplates)" ZipFileName="$(BuildDir)\templates\ProjectTemplates\Migrations.zip" WorkingDirectory="$(TemplatesDir)\ProjectTemplates"/>
+    <Zip Files="@(ItemTemplates)" ZipFileName="$(BuildDir)\templates\ItemTemplates\Migration.zip" WorkingDirectory="$(TemplatesDir)\ItemTemplates"/>
+    <Copy SourceFiles="@(TemplateMetadata)" DestinationFolder="$(BuildDir)\templates" />
+  </Target>
+  
+  <Target Name="Package" DependsOnTargets="Rebuild;Extension">
+    <ItemGroup>
+      <LibraryFiles Include="$(BuildDir)\Pilgrim.dll"/>
+      <ExtensionFiles Include="$(BuildDir)\templates\**\*.*"/>
     </ItemGroup>
 
-    <Zip Files="@(ZipFiles)" ZipFileName="$(PackageDir)\$(MainLibraryName)-lib.zip" WorkingDirectory="$(BuildDir)"/>
+    <Zip Files="@(LibraryFiles)" ZipFileName="$(PackageDir)\$(MainLibraryName)-lib.zip" WorkingDirectory="$(BuildDir)"/>
+    <Zip Files="@(ExtensionFiles)" ZipFileName="$(PackageDir)\$(MainLibraryName).vsix" WorkingDirectory="$(BuildDir)\templates"/>
   </Target>
 
+  <Target Name="Integrate">
+    <CallTarget Targets="Rebuild;Test;Package"></CallTarget>
+  </Target>
 </Project>

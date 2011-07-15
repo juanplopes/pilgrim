@@ -1,6 +1,6 @@
 using System;
 
-namespace Pilgrim.Framework
+namespace Pilgrim
 {
     /// <summary>
     /// Describe a migration

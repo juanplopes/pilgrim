@@ -25,7 +25,7 @@ namespace Pilgrim.Template
 
         public void RunStarted(object automationObject, Dictionary<string, string> replacementsDictionary, WizardRunKind runKind, object[] customParams)
         {
-            replacementsDictionary["$timestamp$"] = string.Format("{0:yyyyMMddHHmmss}", DateTime.Now)+"abc";
+            replacementsDictionary["$timestamp$"] = string.Format("{0:yyyyMMddHHmmss}", DateTime.Now);
         }
 
         public bool ShouldAddProjectItem(string filePath)

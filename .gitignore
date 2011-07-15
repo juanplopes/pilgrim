@@ -20,5 +20,6 @@ pkg/
 /src-tools/base/lib/*.*
 /src-tools/base/*.cache
 
+/tpl/**/*.dll
 
 /lib/NHibernate

@@ -100,7 +100,7 @@
     <Compile Include="Framework\Loggers\Logger.cs" />
     <Compile Include="Framework\Loggers\SqlScriptFileLogger.cs" />
     <Compile Include="Framework\Migration.cs" />
-    <Compile Include="Framework\MigrationAttribute.cs" />
+    <Compile Include="MigrationAttribute.cs" />
     <Compile Include="Framework\MigrationException.cs" />
     <Compile Include="Framework\StringUtils.cs" />
     <Compile Include="Migrator\IrreversibleMigrationException.cs" />
