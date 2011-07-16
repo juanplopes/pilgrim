@@ -4,7 +4,7 @@
     <Name>Pilgrim Migrations Templates</Name>
     <Author>Juan Lopes</Author>
     <Version>#version#</Version>
-    <Description xml:space="preserve">Pilgrim Migrations is a fluent migrations framework. It is a fork from FluentMigrations. Give it a try.</Description>
+    <Description xml:space="preserve">Pilgrim Migrations is a fluent migrations framework. It is a fork from Migrator.Net, but with a redesigned API.</Description>
     <Locale>1033</Locale>
     <Icon>Icon.ico</Icon>
     <SupportedProducts>
