@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Pilgrim.Tests
+namespace Pilgrim.Generator.Console
 {
-    public class Class1
+    public interface IUnsafeCommand : ICommand
     {
     }
 }

@@ -17,7 +17,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
+    <OutputPath>..\..\bin\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -31,6 +31,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Moq">
+      <HintPath>..\..\lib\Moq.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.5.10.11092, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\lib\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity">
+      <HintPath>..\..\lib\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="SharpTestsEx.NUnit">
+      <HintPath>..\..\lib\SharpTestsEx.NUnit.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -39,8 +52,38 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Generator\CsProjects.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CsProjects.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Generator\DefaultHelpWriterFixture.cs" />
+    <Compile Include="Generator\GeneratorResolverArgumentFixture.cs" />
+    <Compile Include="Generator\GeneratorResolverFixture.cs" />
+    <Compile Include="Generator\GeneratorResolverOptionsFixture.cs" />
+    <Compile Include="Generator\ProjectDescriptionFixture.cs" />
+    <Compile Include="Generator\ProjectFileWriterFixture.cs" />
+    <Compile Include="Generator\ProjectWriterFixture.cs" />
+    <Compile Include="Generator\RegexesFixture.cs" />
+    <Compile Include="Generator\RegexHelperFixture.cs" />
+    <Compile Include="Generator\SimpleTemplateFixture.cs" />
+    <Compile Include="Generator\TableNameTransformerFixture.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Pilgrim.Generator\Pilgrim.Generator.csproj">
+      <Project>{0094EA8E-174F-452D-822A-55728A0E496C}</Project>
+      <Name>Pilgrim.Generator</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Generator\00_Simple.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Generator\CsProjects.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>CsProjects.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

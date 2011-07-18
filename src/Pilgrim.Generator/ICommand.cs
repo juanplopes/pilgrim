@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Pilgrim
+namespace Pilgrim.Generator
 {
-    class CommandLineRunner
+    public interface ICommand
     {
+        void Execute();
     }
 }

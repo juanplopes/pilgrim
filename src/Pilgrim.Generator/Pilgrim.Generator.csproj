@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0094EA8E-174F-452D-822A-55728A0E496C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Pilgrim.Generator</RootNamespace>
+    <AssemblyName>Pilgrim.Generator</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>../Pilgrim.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="log4net">
+      <HintPath>..\..\lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="NVelocity">
+      <HintPath>..\..\lib\NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple">
+      <HintPath>..\..\lib\Simple.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AmbiguousCommandException.cs" />
+    <Compile Include="CommandOptions.cs" />
+    <Compile Include="CommandRegistry.cs" />
+    <Compile Include="CommandResolver.cs" />
+    <Compile Include="Console\ConsoleCommandReader.cs" />
+    <Compile Include="Console\ContextBase.cs" />
+    <Compile Include="Console\DefaultConfig.Designer.cs" />
+    <Compile Include="Console\IUnsafeCommand.cs" />
+    <Compile Include="HelpWriter\HelpTextGenerator.cs" />
+    <Compile Include="HelpWriter\HelpTextWriter.cs" />
+    <Compile Include="HelpWriter\IHelpWriter.cs" />
+    <Compile Include="ICommand.cs" />
+    <Compile Include="ICommandOptions.cs" />
+    <Compile Include="InitialCommandOptions.cs" />
+    <Compile Include="InvalidArgumentCountException.cs" />
+    <Compile Include="InvalidCommandException.cs" />
+    <Compile Include="ITableConventions.cs" />
+    <Compile Include="ITableTemplate.cs" />
+    <Compile Include="ParserException.cs" />
+    <Compile Include="Parsers\GeneratorParser.cs" />
+    <Compile Include="Parsers\ICommandParser.cs" />
+    <Compile Include="Parsers\ListParser.cs" />
+    <Compile Include="Parsers\Regexes.cs" />
+    <Compile Include="Parsers\ValueParser.cs" />
+    <Compile Include="ProjectDescription.cs" />
+    <Compile Include="ProjectFileWriter.cs" />
+    <Compile Include="ProjectWriter.cs" />
+    <Compile Include="RegexHelper.cs" />
+    <Compile Include="Strings\EnglishPluralizer.cs" />
+    <Compile Include="Strings\GeneratorStrings.cs" />
+    <Compile Include="Strings\IPluralizer.cs" />
+    <Compile Include="TableNameTransformer.cs" />
+    <Compile Include="TableTemplateBase.cs" />
+    <Compile Include="UnrecognizedOptionsException.cs" />
+    <Compile Include="Metadata\ContextualizedObject.cs" />
+    <Compile Include="Metadata\DataRowExtensions.cs" />
+    <Compile Include="Metadata\DbColumn.cs" />
+    <Compile Include="Metadata\DbForeignKey.cs" />
+    <Compile Include="Metadata\DbRelation.cs" />
+    <Compile Include="Metadata\DbSchema.cs" />
+    <Compile Include="Metadata\DbSchemaProvider.cs" />
+    <Compile Include="Metadata\DbTable.cs" />
+    <Compile Include="Metadata\IDbSchemaProvider.cs" />
+    <Compile Include="Metadata\MetaContext.cs" />
+    <Compile Include="Metadata\Providers\MySqlSchemaProvider.cs" />
+    <Compile Include="Metadata\Providers\OracleSchemaProvider.cs" />
+    <Compile Include="Metadata\Providers\PostgreSqlSchemaProvider.cs" />
+    <Compile Include="Metadata\Providers\SQLiteSchemaProvider.cs" />
+    <Compile Include="Metadata\Providers\SqlServerCeSchemaProvider.cs" />
+    <Compile Include="Metadata\Providers\SqlServerSchemaProvider.cs" />
+    <Compile Include="NVelocity\EngineWrapper.cs" />
+    <Compile Include="NVelocity\NVelocityMemoryEngine.cs" />
+    <Compile Include="NVelocity\SimpleTemplate.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Console\DefaultConfig.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Console\Log4net.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Pilgrim.snk" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

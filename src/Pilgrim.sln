@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pilgrim.Template", "Pilgrim
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pilgrim.Tests", "Pilgrim.Tests\Pilgrim.Tests.csproj", "{FBF43BF1-A509-41E6-AC3D-DE3BEFB0BBA5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pilgrim.Generator", "Pilgrim.Generator\Pilgrim.Generator.csproj", "{0094EA8E-174F-452D-822A-55728A0E496C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,16 @@ Global
 		{FBF43BF1-A509-41E6-AC3D-DE3BEFB0BBA5}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{FBF43BF1-A509-41E6-AC3D-DE3BEFB0BBA5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{FBF43BF1-A509-41E6-AC3D-DE3BEFB0BBA5}.Release|x86.ActiveCfg = Release|Any CPU
+		{0094EA8E-174F-452D-822A-55728A0E496C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0094EA8E-174F-452D-822A-55728A0E496C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0094EA8E-174F-452D-822A-55728A0E496C}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{0094EA8E-174F-452D-822A-55728A0E496C}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{0094EA8E-174F-452D-822A-55728A0E496C}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0094EA8E-174F-452D-822A-55728A0E496C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0094EA8E-174F-452D-822A-55728A0E496C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0094EA8E-174F-452D-822A-55728A0E496C}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{0094EA8E-174F-452D-822A-55728A0E496C}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{0094EA8E-174F-452D-822A-55728A0E496C}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
