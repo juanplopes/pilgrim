@@ -76,9 +76,25 @@
                 ReplacementText="$(ProductVersionBase)" />
   </Target>
   
-  <Target Name="Package" DependsOnTargets="Rebuild;Extension">
+  <Target Name="Merge" DependsOnTargets="Build">
+    <ItemGroup>
+      <LibraryMerge Include="$(BuildDir)\Pilgrim.Generator.dll"/>
+      <LibraryMerge Include="$(BuildDir)\NVelocity.dll"/>
+    </ItemGroup>
+    <ILMerge OutputFile="$(BuildDir)\Pilgrim.Generator.temp.dll"
+      InputAssemblies="@(LibraryMerge)"
+      ToolPath="util\ilmerge"
+      LogFile="" Internalize="true"
+       />
+    <Delete Files="@(LibraryMerge)"></Delete>
+    <Move SourceFiles="$(BuildDir)\Pilgrim.Generator.temp.dll" DestinationFiles="$(BuildDir)\Pilgrim.Generator.dll"/>
+  </Target>
+  
+  <Target Name="Package" DependsOnTargets="Rebuild;Merge;Extension">
     <ItemGroup>
       <LibraryFiles Include="$(BuildDir)\Pilgrim.dll"/>
+      <LibraryFiles Include="$(BuildDir)\Pilgrim.Generator.dll"/>
+      <LibraryFiles Include="$(BuildDir)\Simple.dll"/>
       <ExtensionFiles Include="$(BuildDir)\templates\**\*.*"/>
     </ItemGroup>
 
