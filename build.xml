@@ -81,13 +81,14 @@
       <LibraryMerge Include="$(BuildDir)\Pilgrim.Generator.dll"/>
       <LibraryMerge Include="$(BuildDir)\NVelocity.dll"/>
     </ItemGroup>
-    <ILMerge OutputFile="$(BuildDir)\Pilgrim.Generator.temp.dll"
+    <MakeDir Directories="$(BuildDir)\temp"/>
+    <ILMerge OutputFile="$(BuildDir)\temp\Pilgrim.Generator.dll"
       InputAssemblies="@(LibraryMerge)"
       ToolPath="util\ilmerge"
       LogFile="" Internalize="true"
        />
     <Delete Files="@(LibraryMerge)"></Delete>
-    <Move SourceFiles="$(BuildDir)\Pilgrim.Generator.temp.dll" DestinationFiles="$(BuildDir)\Pilgrim.Generator.dll"/>
+    <Move SourceFiles="$(BuildDir)\temp\Pilgrim.Generator.dll" DestinationFiles="$(BuildDir)\Pilgrim.Generator.dll"/>
   </Target>
   
   <Target Name="Package" DependsOnTargets="Rebuild;Merge;Extension">
