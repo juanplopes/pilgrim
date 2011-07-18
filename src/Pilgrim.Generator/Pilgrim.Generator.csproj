@@ -61,8 +61,6 @@
     <Compile Include="CommandResolver.cs" />
     <Compile Include="Console\ConsoleCommandReader.cs" />
     <Compile Include="Console\ContextBase.cs" />
-    <Compile Include="Console\DefaultConfig.Designer.cs" />
-    <Compile Include="Console\IUnsafeCommand.cs" />
     <Compile Include="HelpWriter\HelpTextGenerator.cs" />
     <Compile Include="HelpWriter\HelpTextWriter.cs" />
     <Compile Include="HelpWriter\IHelpWriter.cs" />
@@ -109,12 +107,6 @@
     <Compile Include="NVelocity\NVelocityMemoryEngine.cs" />
     <Compile Include="NVelocity\SimpleTemplate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Console\DefaultConfig.resx" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Console\Log4net.xml" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Pilgrim.snk" />

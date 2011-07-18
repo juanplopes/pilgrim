@@ -41,8 +41,6 @@ namespace Pilgrim.Generator.Console
         protected virtual void OnBeforeParse(string command, bool interactive) { }
         protected virtual void OnBeforeExecute(ICommand commandObject, string command, bool interactive)
         {
-            if (interactive && commandObject is IUnsafeCommand)
-                throw new ParserException("Command not allowed in interactive mode.");
         }
         protected virtual void OnAfterExecute(ICommand commandObject, string command, bool interactive) { }
 
