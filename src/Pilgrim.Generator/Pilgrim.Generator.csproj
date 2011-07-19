@@ -48,6 +48,7 @@
       <HintPath>..\..\lib\Simple.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -59,6 +60,7 @@
     <Compile Include="CommandOptions.cs" />
     <Compile Include="CommandRegistry.cs" />
     <Compile Include="CommandResolver.cs" />
+    <Compile Include="ConsoleResolver.cs" />
     <Compile Include="Console\ConsoleCommandReader.cs" />
     <Compile Include="Console\ContextBase.cs" />
     <Compile Include="HelpWriter\HelpTextGenerator.cs" />
@@ -85,7 +87,7 @@
     <Compile Include="Strings\GeneratorStrings.cs" />
     <Compile Include="Strings\IPluralizer.cs" />
     <Compile Include="TableNameTransformer.cs" />
-    <Compile Include="TableTemplateBase.cs" />
+    <Compile Include="TableTemplate.cs" />
     <Compile Include="UnrecognizedOptionsException.cs" />
     <Compile Include="Metadata\ContextualizedObject.cs" />
     <Compile Include="Metadata\DataRowExtensions.cs" />
@@ -107,9 +109,6 @@
     <Compile Include="NVelocity\NVelocityMemoryEngine.cs" />
     <Compile Include="NVelocity\SimpleTemplate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Pilgrim.snk" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

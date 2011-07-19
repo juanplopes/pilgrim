@@ -145,9 +145,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Pilgrim.snk">
-      <Link>Pilgrim.snk</Link>
-    </None>
     <None Include="app.config" />
     <None Include="Dialog\ClassDiagram1.cd" />
     <None Include="Dialog\ClassDiagram2.cd" />

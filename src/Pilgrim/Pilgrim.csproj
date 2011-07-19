@@ -135,9 +135,6 @@
     <Compile Include="Providers\TypeNames.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\Pilgrim.snk">
-      <Link>Pilgrim.snk</Link>
-    </None>
     <None Include="Fluent\Tables\TableAction.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>TableAction1.cs</LastGenOutput>

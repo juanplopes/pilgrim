@@ -9,9 +9,8 @@ namespace Pilgrim.Generator
     public interface ITableTemplate
     {
         void Create(DbTable table);
-        void Delete(string className);
+        ITableTemplate WithConventions(ITableConventions conventions);
         ITableTemplate As(string type);
-        ITableTemplate SetOverwrite(bool value);
-        ITableTemplate Target(ProjectFileWriter project, string file);
+        ITableTemplate Target(string project, string file);
     }
 }

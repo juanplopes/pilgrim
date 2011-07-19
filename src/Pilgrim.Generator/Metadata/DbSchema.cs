@@ -48,6 +48,15 @@ namespace Pilgrim.Generator.Metadata
             }
         }
 
+        public DbSchema(string connectionStringName)
+        {
+            var config = ConfigurationManager.ConnectionStrings[connectionStringName];
+            if (config == null) throw new ArgumentException("invalid connection string name", "connectionStringName");
+
+            this.Provider = config.ProviderName;
+            this.ConnectionString = config.ConnectionString;
+        }
+
         public DbSchema(string provider, string connectionString)
         {
             this.Provider = provider;

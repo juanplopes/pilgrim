@@ -93,9 +93,9 @@
   
   <Target Name="Package" DependsOnTargets="Rebuild;Merge;Extension">
     <ItemGroup>
+      <LibraryFiles Include="$(BuildDir)\Simple.dll"/>
       <LibraryFiles Include="$(BuildDir)\Pilgrim.dll"/>
       <LibraryFiles Include="$(BuildDir)\Pilgrim.Generator.dll"/>
-      <LibraryFiles Include="$(BuildDir)\Simple.dll"/>
       <ExtensionFiles Include="$(BuildDir)\templates\**\*.*"/>
     </ItemGroup>
 
