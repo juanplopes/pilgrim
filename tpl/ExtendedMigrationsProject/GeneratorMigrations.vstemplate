@@ -1,0 +1,42 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Pilgrim Migrations Project (with code generators)</Name>
+    <Description>Extended Pilgrim Migrations Project</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>10</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Migrations</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <Icon>__PreviewImage.ico</Icon>
+    <PreviewImage>__PreviewImage.ico</PreviewImage>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="GeneratorMigrations.csproj" File="GeneratorMigrations.csproj" ReplaceParameters="true">
+      <ProjectItem ReplaceParameters="true" TargetFileName="App.config">App.config</ProjectItem>
+      <Folder Name="Libraries" TargetFolderName="Libraries">
+        <ProjectItem ReplaceParameters="false" TargetFileName="log4net.dll">log4net.dll</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Pilgrim.dll">Pilgrim.dll</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Pilgrim.Generator.dll">Pilgrim.Generator.dll</ProjectItem>
+        <ProjectItem ReplaceParameters="false" TargetFileName="Simple.dll">Simple.dll</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AssemblyInfo.cs">AssemblyInfo.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Templates" TargetFolderName="Templates">
+        <ProjectItem ReplaceParameters="true" TargetFileName="Conventions.cs">Conventions.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MigrateTool.cs">MigrateTool.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="SampleTemplate.txt">SampleTemplate.txt</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ScaffoldGenerator.cs">ScaffoldGenerator.cs</ProjectItem>
+      </Folder>
+    </Project>
+  </TemplateContent>
+  <WizardExtension>
+    <Assembly>Pilgrim.Template, Version=1.0.0.0, Culture=neutral, PublicKeyToken=205aed16ca3fe93d</Assembly>
+    <FullClassName>Pilgrim.Template.ProjectWizard</FullClassName>
+  </WizardExtension>
+</VSTemplate>

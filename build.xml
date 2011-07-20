@@ -64,12 +64,14 @@
     <Copy SourceFiles="$(BuildDir)\Pilgrim.dll" DestinationFolder="$(TemplatesDir)\ProjectTemplates\" />
     <Copy SourceFiles="$(BuildDir)\Pilgrim.Template.dll" DestinationFolder="$(BuildDir)\templates\" />
     <ItemGroup>
-      <ProjectTemplates Include="$(TemplatesDir)\ProjectTemplates\**\*.*"/>
-      <ItemTemplates Include="$(TemplatesDir)\ItemTemplates\**\*.*"/>
+      <SimpleProjectTemplate Include="$(TemplatesDir)\SimpleMigrationsProject\**\*.*"/>
+      <ExtendedProjectTemplate Include="$(TemplatesDir)\ExtendedMigrationsProject\**\*.*"/>
+      <ItemTemplates Include="$(TemplatesDir)\Migration\**\*.*"/>
       <TemplateMetadata Include="$(TemplatesDir)\*.*" />
     </ItemGroup>
-    <Zip Files="@(ProjectTemplates)" ZipFileName="$(BuildDir)\templates\ProjectTemplates\Migrations.zip" WorkingDirectory="$(TemplatesDir)\ProjectTemplates"/>
-    <Zip Files="@(ItemTemplates)" ZipFileName="$(BuildDir)\templates\ItemTemplates\Migration.zip" WorkingDirectory="$(TemplatesDir)\ItemTemplates"/>
+    <Zip Files="@(ExtendedProjectTemplate)" ZipFileName="$(BuildDir)\templates\ProjectTemplates\ExtendedMigrationsProject.zip" WorkingDirectory="$(TemplatesDir)\ExtendedMigrationsProject"/>
+    <Zip Files="@(SimpleProjectTemplate)" ZipFileName="$(BuildDir)\templates\ProjectTemplates\SimpleMigrationsProject.zip" WorkingDirectory="$(TemplatesDir)\SimpleMigrationsProject"/>
+    <Zip Files="@(ItemTemplates)" ZipFileName="$(BuildDir)\templates\ItemTemplates\Migration.zip" WorkingDirectory="$(TemplatesDir)\Migration"/>
     <Copy SourceFiles="@(TemplateMetadata)" DestinationFolder="$(BuildDir)\templates" />
       <FileUpdate Files="$(BuildDir)\templates\extension.vsixmanifest"
                 Regex="#version#"
@@ -96,9 +98,11 @@
       <LibraryFiles Include="$(BuildDir)\Simple.dll"/>
       <LibraryFiles Include="$(BuildDir)\Pilgrim.dll"/>
       <LibraryFiles Include="$(BuildDir)\Pilgrim.Generator.dll"/>
+      <LibraryFiles Include="$(BuildDir)\log4net.dll"/>
       <ExtensionFiles Include="$(BuildDir)\templates\**\*.*"/>
     </ItemGroup>
 
+    <Copy SourceFiles="@(LibraryFiles)" DestinationFolder="$(PackageDir)\lib" />
     <Zip Files="@(LibraryFiles)" ZipFileName="$(PackageDir)\$(MainLibraryName)-lib.zip" WorkingDirectory="$(BuildDir)"/>
     <Zip Files="@(ExtensionFiles)" ZipFileName="$(PackageDir)\$(MainLibraryName).vsix" WorkingDirectory="$(BuildDir)\templates"/>
   </Target>

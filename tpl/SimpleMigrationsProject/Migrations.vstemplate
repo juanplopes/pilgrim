@@ -3,8 +3,7 @@
     <Name>Pilgrim Migrations Project</Name>
     <Description>Pilgrim Migrations Project</Description>
     <ProjectType>CSharp</ProjectType>
-    <ProjectSubType>Pilgrim Migrations
-    </ProjectSubType>
+    <ProjectSubType></ProjectSubType>
     <CreateNewFolder>true</CreateNewFolder>
     <DefaultName>Migrations</DefaultName>
     <ProvideDefaultName>true</ProvideDefaultName>

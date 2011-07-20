@@ -1,0 +1,4 @@
+﻿//$re.NameFor($table)
+#foreach($field in $table.AllColumns)
+//        $re.NameFor($field): $re.TypeFor($field)
+#end
