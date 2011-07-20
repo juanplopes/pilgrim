@@ -14,7 +14,7 @@
     <ProductVersionBase>0.2</ProductVersionBase>
     <ProductVersionBuild>0.0</ProductVersionBuild>
    
-    <MainLibraryName>pilgrim-$(ProductVersionBase)</MainLibraryName>
+    <MainLibraryName>pilgrim-$(ProductVersionBase).$(ProductVersionBuild)</MainLibraryName>
     
     <TestAssembly>$(BuildDir)\Pilgrim.Tests.dll</TestAssembly>
   </PropertyGroup>
