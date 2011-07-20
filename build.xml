@@ -11,7 +11,7 @@
     <Configuration>Release</Configuration>
     <Platform>Any CPU</Platform>
 
-    <ProductVersionBase>0.1</ProductVersionBase>
+    <ProductVersionBase>0.2</ProductVersionBase>
     <ProductVersionBuild>0.0</ProductVersionBuild>
    
     <MainLibraryName>pilgrim-$(ProductVersionBase)</MainLibraryName>
