@@ -75,7 +75,7 @@
     <Copy SourceFiles="@(TemplateMetadata)" DestinationFolder="$(BuildDir)\templates" />
       <FileUpdate Files="$(BuildDir)\templates\extension.vsixmanifest"
                 Regex="#version#"
-                ReplacementText="$(ProductVersionBase)" />
+                ReplacementText="$(ProductVersionBase).$(ProductVersionBuild)" />
   </Target>
   
   <Target Name="Merge" DependsOnTargets="Build">
