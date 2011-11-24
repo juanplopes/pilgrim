@@ -7,6 +7,7 @@
     <Description xml:space="preserve">Pilgrim Migrations is a fluent migrations framework. It is a fork from Migrator.Net, but with a redesigned API.</Description>
     <Locale>1033</Locale>
     <Icon>Icon.ico</Icon>
+    <License>License.txt</License>
     <SupportedProducts>
       <VisualStudio Version="10.0">
         <Edition>Ultimate</Edition>
