@@ -61,8 +61,10 @@
   </Target>
 
   <Target Name="Extension" DependsOnTargets="Build">
-    <Copy SourceFiles="$(BuildDir)\Pilgrim.dll" DestinationFolder="$(TemplatesDir)\ProjectTemplates\" />
-    <Copy SourceFiles="$(BuildDir)\Pilgrim.Template.dll" DestinationFolder="$(BuildDir)\templates\" />
+    <Copy SourceFiles="$(BuildDir)\Pilgrim.dll" DestinationFolder="$(TemplatesDir)\SimpleMigrationsProject" />
+    <Copy SourceFiles="$(BuildDir)\Pilgrim.dll;$(BuildDir)\Pilgrim.Generator.dll;$(BuildDir)\log4net.dll;$(BuildDir)\Simple.dll" 
+        DestinationFolder="$(TemplatesDir)\ExtendedMigrationsProject\Libraries" />
+    <Copy SourceFiles="$(BuildDir)\Pilgrim.Template.dll" DestinationFolder="$(TemplatesDir)" />
     <ItemGroup>
       <SimpleProjectTemplate Include="$(TemplatesDir)\SimpleMigrationsProject\**\*.*"/>
       <ExtendedProjectTemplate Include="$(TemplatesDir)\ExtendedMigrationsProject\**\*.*"/>
