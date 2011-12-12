@@ -23,7 +23,7 @@ class Program
 
 The template with code generation is a little more complicated, but keep in mind you just need this to start.
 
-# Migrations Example
+# Migrations Examples
 
 ## Adding new table
 ``` csharp
