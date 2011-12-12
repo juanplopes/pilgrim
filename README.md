@@ -5,7 +5,7 @@
 * Follow the wizard.
 * Create new Migration.
 
-# Please Notice
+# Running Migrations
 
 The code needed to run the migrations is basically:
 
