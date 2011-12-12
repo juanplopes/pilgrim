@@ -7,8 +7,6 @@ using System.Data;
 
 namespace Pilgrim
 {
-
-
     public abstract partial class TableAction : IAction
     {
         public SchemaAction Database { get; set; }
@@ -29,25 +27,25 @@ namespace Pilgrim
             return column;
         }
 
-        public UniqueConstraintAddAction UniqueColumns(string name, params ColumnAction[] columns)
+        public UniqueConstraintAddAction AddUniqueColumns(string name, params ColumnNameAction[] columns)
         {
             var action = new UniqueConstraintAddAction(this, name, columns);
             Actions.Add(action);
             return action;
         }
 
-        public ForeignKeyAddAction AutoForeignKey(string primaryKeyTable, params ForeignKeyRelation[] columns)
+        public ForeignKeyAddAction AddAutoForeignKey(string primaryKeyTable, params ForeignKeyRelation[] columns)
         {
-            return AutoForeignKey(primaryKeyTable, null, columns);
+            return AddAutoForeignKey(primaryKeyTable, null, columns);
         }
 
-        public ForeignKeyAddAction AutoForeignKey(string primaryKeyTable, string tag, params ForeignKeyRelation[] columns)
+        public ForeignKeyAddAction AddAutoForeignKey(string primaryKeyTable, string tag, params ForeignKeyRelation[] columns)
         {
-            return ForeignKey(
+            return AddForeignKey(
                 Database.Convention.ForeignKeyConstraint(Name, string.Empty, primaryKeyTable, string.Empty, tag),
                 primaryKeyTable, columns);
         }
-        public ForeignKeyAddAction ForeignKey(string name, string primaryKeyTable, params ForeignKeyRelation[] columns)
+        public ForeignKeyAddAction AddForeignKey(string name, string primaryKeyTable, params ForeignKeyRelation[] columns)
         {
             var action = new ForeignKeyAddAction(this, name, columns.Select(x => x.FromColumn.Name).ToArray(),
                    primaryKeyTable, columns.Select(x => x.ToColumn).ToArray());
@@ -55,7 +53,7 @@ namespace Pilgrim
             return action;
         }
 
-        public ColumnNameAction ColumnName(string name)
+        public ColumnNameAction WithColumn(string name)
         {
             return new ColumnNameAction.Concrete(this, name);
         }

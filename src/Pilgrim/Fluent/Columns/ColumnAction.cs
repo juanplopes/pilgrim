@@ -91,13 +91,19 @@ namespace Pilgrim
         public ForeignKeyAddAction ForeignKey(string name, string primaryKeyTable, string primaryKeyColumn)
         {
             WithProperties(ColumnProperty.ForeignKey);
-            return Table.ForeignKey(name, primaryKeyTable, this.LinkedTo(primaryKeyColumn));
+            return Table.AddForeignKey(name, primaryKeyTable, this.LinkedTo(primaryKeyColumn));
         }
 
         public override ForeignKeyRelation LinkedTo(string column)
         {
             this.WithProperties(ColumnProperty.ForeignKey);
             return base.LinkedTo(column);
+        }
+
+        public UniqueConstraintAddAction Unique(string constraintName)
+        {
+            this.WithProperties(ColumnProperty.Unique);
+            return Table.AddUniqueColumns(constraintName, this);
         }
 
         public ColumnAction Nullable()
