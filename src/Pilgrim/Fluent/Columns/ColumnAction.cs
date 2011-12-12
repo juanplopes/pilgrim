@@ -102,7 +102,6 @@ namespace Pilgrim
 
         public UniqueConstraintAddAction Unique(string constraintName)
         {
-            this.WithProperties(ColumnProperty.Unique);
             return Table.AddUniqueColumns(constraintName, this);
         }
 
