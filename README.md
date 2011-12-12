@@ -32,11 +32,13 @@ public class M20111212064831 : FluentMigration
 {
     public override void Up(SchemaAction schema)
     {
+        schema.AddTable("groups", t => t.AddString("name"));
+
         schema.AddTable("users", t =>
         {
             t.AddString("email").NotNullable();
             t.AddDateTime("registered_at");
-            
+
             t.AddInt32("group_id").AutoForeignKey("groups");
         });
     }
@@ -44,6 +46,7 @@ public class M20111212064831 : FluentMigration
     public override void Down(SchemaAction schema)
     {
         schema.RemoveTable("users");
+        schema.RemoveTable("groups");
     }
 }
 ```
